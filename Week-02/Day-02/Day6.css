@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    background-color: rgb(238, 235, 232);
+}
+.Header{
+    display: flex;
+    min-height: 90px;
+    background-color: darkblue;
+    color: white;
+}
+.logo{
+      width: 20%;
+      padding: 10px;
+}
+ .logo img{
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: auto;
+ } 
+.Heading{  
+    width:80%;
+    padding: 5px;
+}
+.Menu{
+    background-color:lightblue;
+    text-align: center;
+    min-height: 50px;
+}
+.Menu li{
+    display: inline;
+    margin: 5px;
+    font-weight: bolder;
+    line-height:50px;
+    padding: 10px 10px 10px 10px; 
+    background-color: azure;
+    border-radius: 4px;;
+}
+.Menu li:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+.Section{
+    display: flex;
+    min-height: 250px;
+    background-color: lightgray;
+}
+.section1{
+   
+    width: 33%;
+}
+.section2{
+    
+    width: 34%;
+}
+.section3{
+
+    width: 33%;
+}
+.Content{
+    display: flex;
+    min-height: 400px;
+    background-color: white;
+}
+.Page{
+    width: 80%;
+}
+.Page p{
+    padding: 8px;
+    font-weight: bolder;
+}
+.bar{
+    width: 20%;
+    background-color: gray;
+}
+.bar a{
+    font-weight: bolder;
+    font-size: larger;
+    padding: 5px;
+}
+.Footer{
+    background-color: darkblue;
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+.Footer p{
+    font-size: medium;
+}

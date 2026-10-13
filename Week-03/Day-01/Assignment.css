@@ -1,0 +1,280 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FF7A00;
+}
+.container{
+    height: auto;
+    width: 95%;
+    background-color: #0D1D33;;
+    margin: auto;
+    margin-top: 10px;
+    
+}
+.header{
+    /* width: 100%; */
+    height: 60px;
+    margin-top: 20px;
+    background-color:#0D1D33;
+}
+.logo{
+    height: inherit;
+    width:25%;
+    float: left;
+}
+.logo h1{
+    color: white;
+    padding: 5px;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.nav{
+    height: inherit;
+    width: 75%;
+}
+.nav ul{
+    list-style: none;
+    text-align: center;
+}
+.nav ul li{
+    display: inline-block;
+    margin: 20px 20px;
+    width: 70px;
+    font-weight:900;
+    font-size: 20px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color:white;
+    padding: 5px;
+}   
+.nav ul li a:hover{
+    border-radius: 15px;
+    opacity: 0.8;
+    color: white;
+}
+.section{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    clear: both;
+    height: auto;
+    background-color: #0D1D33;
+    color: white;
+}
+.left{
+    margin-top: 25px;
+    width: 55%;
+    height: auto;
+}
+.right{
+    margin-top: 25px;
+    width: 35%;
+    color: black;
+}
+.btn{
+    width: 15%;
+    height: 40px;
+    padding: 10px 20px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 750;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.form_area{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 550px;
+    padding: 25px;
+    border-radius: 30px;
+    background-color: #0f2039;
+    box-shadow: 0px 0px 10px #f7f9fb;
+} 
+.align_area{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.input_area{
+    margin-top: 10px;
+}
+.input_area input{
+    margin-top: 3px;
+    width: 200px;
+    padding: 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    border: 2px solid #C87259;
+    border-radius:8px ;
+}
+.input_area textarea::placeholder {
+  font-weight: bold;
+}
+.left_1{
+    margin-top: 25px;
+    width: 55%;
+    height: auto;
+}
+.right_1{
+    height: 400px;
+    margin-top: 25px;
+    width: 35%;
+}
+.area{
+    margin-top: 5px;
+    width: 40%;
+    height: auto;
+    color: #0D1D33;
+}
+.area1{
+    padding: 10px;
+    display: flex;
+    height: inherit;
+    float: left;
+    width: 50%;
+}
+.area1 ul{
+    list-style: none;
+}
+.area1 ul li{
+    font-weight:800;
+    font-size: 15px;
+}
+.area2{
+    padding: 10px;
+    height: inherit;
+    display: flex;
+    float: right;
+    width: 50%;
+}
+.area2 ul{
+    list-style: none;
+}
+.area2 ul li{
+    font-weight:800;
+    font-size: 15px;
+}
+.intro{
+    clear: both;
+    display: flex;
+    height: 50px;
+    width:40% ;
+    margin-left: 15px;
+    color: black;
+}
+.introleft{
+    display: flex;
+    width: 50%;
+    height: inherit;
+}
+.introleft1{
+    width: 30%;
+    height: inherit;
+}
+.introleft2{
+    width: 70%;
+}
+.introright{
+    display: flex;
+    width: 50%;
+    height: inherit;
+}
+.introright1{
+    width: 30%;
+}
+.introright2{
+    width: 70%;
+}
+.intropng{
+    height: 50px;
+    
+}
+.BoxSection{
+    background-color: whitesmoke;
+    height: 450px;
+    clear: both;
+}
+.Boxheading{
+    text-align: center;
+    width: 100%;
+    height: 70px;
+}
+.Boxes{
+    margin: auto;
+    margin-top: 15px;
+    width: 60%;
+    clear: both;
+    height: 350px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}    
+.boxup{
+    background-color: white;
+    height: inherit;
+}
+.boxup img{
+    height: 80px;
+    float: right;
+}
+.boxdown{
+    height: inherit;
+    background-color: white;
+}
+.boxdown p{
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.boxdown h3{
+    font-size: 30px;
+    margin-top: 7px;
+    color: #0D1D33;
+}
+.boxdown a{
+    font-size: 18px;
+    padding: 30px;
+    color: orangered;
+    text-decoration: none;
+}
+.Box{
+    display: grid;
+    grid-template-columns:0.3fr 1fr;
+}
+.footerHeading{
+    text-align: center;
+    width: 70%;
+    height:inherit;
+    color: white;
+    float: left;
+}
+.footerHeading h1{
+    font-size: 33px;
+    padding: 15px;
+}
+.footerbutton{
+    float: right;
+    height: inherit;
+    width: 30%;
+}
+.fbutton{
+    width: 200px;
+    margin-top: 30px;
+    font-weight: 600;
+    margin-left: 70px;
+    font-size: 17px;
+    background-color: white;
+    color: orange;
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <title>Learning Bootstrap</title>\
+    <style>
+        #bg {
+            background-color: brown;
+            color: white;
+        }
+
+        .row {
+            border: 5px solid blue;
+            font-size: 30px;
+            text-align: center;
+            /* color: white; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- container create space between left&right side without margin and padding and it can adjust with screensize  -->
+    <div class="container" id="bg">
+        <h2>container</h2>
+    </div>
+    <!-- container-fluid have max width  -->
+    <br>
+    <div class="container-fluid" id="bg">
+        <h2>container-fluid</h2>
+    </div>
+    <!-- container-(breakpoint) we can adjust size by give size xxl,xl,lg,md,sm,xs -->
+    <br>
+    <div class="container-xxl" id="bg">
+        <h2>container-Extra large</h2>
+    </div>
+    <!-- ROW and Column class 
+     In each row we have 12 columns only
+      -->
+    <br>
+    <div class="container">
+        <!-- row-cols-n to align how many column stay in in one row -->
+        <div class="row ">
+            <div class="col">Column1</div>
+            <div class="col">Column2</div>
+            <div class="col">Column3</div>
+        </div>
+    </div>
+    <!-- GRID In Bootstrap in which we adjust column accoradingly by dividing column between in 12 (col-12) and if we don't seprate in between 12 the last colum come in 2nd row Accordingly.-->
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 bg-primary">4-Column</div>
+            <div class="col-6 bg-warning">6-Column</div>
+            <div class="col-2 bg-info">2-Column</div>
+        </div>
+    </div>
+    <!-- Break point in column
+      Like minimize the screen col remain after that  brak-point(xxl,xl,lg,md,sm,xs) it come down accordinglt  -->
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl bg-info">Column will break down</div>
+            <div class="col-xl bg-warning">Below after given breakpoint</div>
+        </div>
+    </div>
+    <br>
+    <!-- Offset in Bootstrap 
+     we use offset-n to create space in  specifc column-->
+    <div class="container">
+        <div class="row">
+            <div class="col-2 offset-2 bg-warning">Offset-2</div>
+            <div class="col-2 offset-5 bg-info">offset-5</div>
+        </div>
+    </div>
+    <!-- Order class we use order first and last in specific column and we can also align order-n to algin specific columns and we can also give breakpoint-->
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 order-md-1 order-xl-4 bg-warning">Order1</div>
+            <div class="col-3 order-md-2 order-xl-3 bg-info">Order2</div>
+            <div class="col-3 order-md-3 order-xl-2 bg-secondary">Order3</div>
+            <div class="col-3 order-md-4 order-xl-1  bg-warning">Order4</div>
+        </div>
+    </div>
+    <!-- MARGIN have same system like in css but here we margin between 0-5
+     we can also use brakpoint in Margin
+     for all side use m-n
+     margin-top -> mt
+     margin-bottom -> mb
+     margin-left -> ms
+     margin-right -> me
+     margin-left-right -> mx
+     margin-top-botto -> my
+    -->
+    <hr>
+    <h1 class="text-bg-primary mx-2 my-3">LOREM</h1>
+    <p class="text-bg-warning mx-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo dolore
+        aspernatur ipsum reiciendis expedita laborum laboriosam molestias eum maiores tenetur?</p>
+
+    <div class="container">
+        <div class="row border border-5 border-dark">
+            <div class="col-2 text-bg-primary me-auto">margin-left</div>
+            <div class="col-2 text-bg-warning">margin-right</div>
+        </div>
+    </div>
+    <hr>
+    <!-- padding same as MArgin but it work inside the box while margin work outside the box.
+    p-n,p-s,-p-e,- 
+    Padding also use Breakpoint. -->
+    <h2 class=" text-bg-primary m-5 p-2">Padding</h2>
+    <hr>
+    <!-- border 
+     broder-color
+     rounded-(0-5) border round by start,end,top and bottom
+     we use clearfix to clear border from above and give border to its div-->
+    <h2 class="m-3 p-1 border rounded-5 border-2 border-dark">
+        border
+    </h2>
+    <!-- Texting 
+     fs-n(0-6) for Font size
+     fw-(lighter,light,medium,bold,blder) for Font Weight
+     text-upper/lower case or capitalize for text change
+     text-start/end/end/wrap for Alignment
+     text-break
+     text-reset to remove link text color
+     displayn(1-6) to increase size of font
+    -->
+    <!-- LIST
+      list ustyled remove bulit point
+      list inline it makes a list a  b  c 
+      list inline item (ul)
+      -->
+    <hr>
+    <!-- Table in tag table we give class and 
+         table-color
+         table-striped for dark&light theme
+         table-hover
+         table-active to give spectific color to row or any data
+         table-bordered and border-color
+         table-group-divider
+         align-top/middle/bottom Align table data 
+         caption-top/middle/bottom
+         table-responsive In this only table get responsive not other tags  -->
+    <h2>Table class</h2>
+    <div class="table-responsive">
+        <table class="table table-info table-striped table-hover table-bordered border-danger">
+            <caption>Student and Payment Information</caption>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Course</th>
+            </tr>
+            <tr>
+                <td>ABC</td>
+                <td>01</td>
+                <td>xyz</td>
+            </tr>
+            <tr>
+                <td>ABC</td>
+                <td>01</td>
+                <td>xyz</td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <!-- IMAGE 
+     img-fluid to get fit in that div
+     img-thumbnail give image border
+     rounded or -n(0-5) or circle/pill/end/start/top/bottom to make image round -->
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-2 border border-2 border-danger">
+            <img src="1.png" alt="pic" class="img-fluid ">
+        </div>
+        <div class="col-2">
+            <img src="1.png" alt="pic" class="img-fluid img-thumbnail">
+        </div>
+        <div class="col-2 border border-2 border-danger">
+            <img src="1.png" alt="pic" class="img-fluid rounded-pill">
+        </div>
+    </div>
+    <br>
+    <!-- to align image between row we use float-start/end/-->
+    <div class="row">
+        <div class="col border border-5 border-danger">
+            <img src="1.png" alt="pic" class="img-fluid float-end">
+        </div>
+    </div>
+    <br>
+    <!-- We can use margin to align Items Accordingly -->
+    <div class="row">
+        <div class="col-9" style="border: 5px solid red;">
+            <img src="1.png" class="img-fluid d-block mx-auto" alt="pic">
+        </div>
+    </div>
+    <br>
+    <!-- we also use Figure  to give caption to images -->
+    <figure class="figure">
+        <img src="1.png" alt="Pic" class="img-fluid figure-img">
+        <figcaption class="figure-caption text-center">Lets Start with 786</figcaption>
+    </figure>
+    <hr>
+    <!-- OverFlow  -->
+    <p class="overflow-x-auto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam esse a at dolor atque fuga rerum non ea quae!
+        Distinctio eaque similique repudiandae, quibusdam facere impedit assumenda magnam dolores tempora? Doloremque,
+        maxime reprehenderit sit quibusdam explicabo quasi accusamus ex, nesciunt fuga necessitatibus ipsam! Numquam,
+        quod alias. Rem repudiandae nihil animi consequatur libero perferendis facilis illum fugit quae. Sed,
+        repellendus aliquid blanditiis adipisci dicta nihil eius iste mollitia, quo aliquam corrupti minus quae.
+        Reiciendis, nemo voluptatem suscipit atque eveniet porro at ex ab incidunt, quae iste voluptatibus pariatur cum
+        odio sequi ad iure velit nesciunt voluptas officiis perferendis consequuntur nulla quam. Ea, numquam minus odio
+        fugit quis sunt commodi assumenda aliquid. Dolor at soluta aperiam! Quisquam fugit, provident in harum
+        voluptatum error facilis magnam porro? Quae aliquid illum magni, beatae quo reiciendis perferendis
+        exercitationem odit ut nesciunt explicabo debitis corporis similique ab tenetur amet hic excepturi velit
+        accusamus commodi qui, id earum sapiente illo! Odit, commodi earum! Odit in temporibus optio dolor, doloribus
+        fuga. Labore, earum. Accusamus suscipit consectetur assumenda, sed quos possimus nobis tempore, labore aperiam,
+        quam odio. Adipisci itaque nemo commodi suscipit distinctio assumenda voluptatem aut. Distinctio veniam
+        repellendus tempora explicabo laborum quam ipsam, itaque ipsum et amet libero.
+    </p>
+    <hr>
+    <!-- FLEXBOX -->
+    <!-- d-flex to make an div in row and 
+   In justify-content we align div to switch between center/start/end/around or between
+   we can also align div in center/start/end by align-item-n for one row
+    we can align mulitiple row by simple use Content like align-content-n 
+    -->
+    <h2>CARD</h2>
+    <div class="card" style="width: 18rem;">
+  <img src="2.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    <!-- card
+    card-img-top
+    card-body
+    card-title
+    card-text
+    card-header
+    card-footer -->
+<hr>
+    <!-- TASK 1 -->
+     <h1>FORMS<span><h2>task for Bootstrap Practice</h2></span></h1>
+     <div class="container bg-success align-content-center ">
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <form action="" class="bg-white p-3 rounded">
+                        <h2 class="text-center text-success">SignIn Page</h2>
+                        <div class="mb-3">
+                            <label for="" class="form-label">First Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Last Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Password</label>
+                            <input type="password" class="form-control">
+                            <div class="form-text">
+                                Your password must have 6 alphabets include number
+                            </div>
+                            <div class="mt-3 d-grid">
+                                <button type="submit" class="btn btn-success > ">SignUp</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div> 
+    <!-- JAVA SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

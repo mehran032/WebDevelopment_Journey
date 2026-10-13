@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    background-color: aqua;
+    overflow: hidden;
+}
+.Profile{
+    margin: 120px auto;
+    width: 20%;
+    height: auto;
+    background-color: blanchedalmond;
+    border-radius: 50px;
+    text-align: center;
+}
+.Profile h1{
+    padding: 5px;
+    color: rgb(0, 0, 0);
+}
+.Profile h4{
+    text-align: left;
+}
+.Profile ul{
+    text-align: left;
+}
+.Profile ol{
+    text-align: left;
+}
+.Profile img{
+    height: 200px;
+    border-radius: 300px;
+}
+.Profile button{
+   border-radius: 5px;
+    background-color: rgb(141, 153, 154);
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: aqua;
+    padding: 5px;
+}
+.Part2{
+    margin: 70px auto;
+    width: 25%;
+    min-height: auto;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+}
+.Part2 h1{
+    
+    text-align: center;
+}
+.Part2 form{
+    padding: 5px;
+    margin: 15px auto;
+    width: fit-content;
+    border-radius: 5px;
+    border: 5px solid rgb(4, 131, 131);
+    background-color: aqua;
+}
+.Part2 input{
+    padding: 2px;
+    margin: auto;
+}
+.Part2 button{
+    color: black;
+    border: 2px solid black; 
+    background-color: #d0cbc6;
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+}
+.Part2 button:hover {
+    color: white;
+    background-color: black;
+}

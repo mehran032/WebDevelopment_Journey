@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> REGISTERATION</title>
+    <link rel="stylesheet" href="Personal_Profile_Card.css">
+</head>
+<body>
+    <div class="Part2">
+        <h1>REGISTERATION</h1>
+        <form>
+            <label for="Name">Name:</label><br>
+            <input type="text" id="Name" required>
+            <br><br>
+            <label for="Email">Email:</label><br>
+            <input type="email" id="Email" required>
+            <br><br>
+            <label for="Password">Password:</label><br>
+            <input type="password" id="Password" required>
+            <br><br>
+            <label >Gender :</label>
+            <input type="radio" name="Gender" id="Male" value="Male" required>
+            <label for="Male">Male</label>
+            <input type="radio" name="Gender" id="Female" value="Female" required>
+            <label for="Female">Female</label><br><br>
+            <label for="Course">Course : </label>
+            <select name="Course" id="Course" required>
+                <option disabled>select an option</option>
+                <option value="Course1">Course 1</option>
+                <option value="Course2"> Course 2</option>
+                <option value="Course3"> Course 3</option>
+            </select><br><br>
+            <label >Skills :</label> <br>
+            <input type="checkbox" name="Skills" id="Skill_1" value="Skill_1">
+            <label for="Skill_1">Skill_1</label>
+            <input type="checkbox" name="Skills" id="Skill_2" value="Skill_2" >
+            <label for="Skill_2">Skill_2</label>
+            <input type="checkbox" name="Skills" id="Skill_3" value="Skill_3">
+            <label for="Skill_3">Skill_3</label><br><br>
+            <label for="OthersSkill">OthersSkill : </label><br>
+            <textarea name="OthersSkill" id="OthersSkill"></textarea><br>
+            <hr>
+            <button>Submit</button>
+        </form>
+        <br>
+    </div>
+</body>
+</html>
